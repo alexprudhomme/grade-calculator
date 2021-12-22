@@ -1,32 +1,75 @@
+<!DOCTYPE html>
 <html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculatrice</title>
+    <title>Calculatrice de cote</title>
+    <link rel="icon" href="images/duck2.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class = "container">
-        <div class = 'row'>
-             <div class="col-md-12">
-                 <form action = "#" name="calculator" class="main">
-                     <input type = "text" class="display form-control" name="display" id="display"><br>
-                     <input type="button" class="btn btn-primary" value="clear" id="clear"><br> <br>
-                     <input type="button" class="btn btn-primary" value="backspace" onclick="backSpace()"><br> <br>
-                     <input type="button" class="btn btn-primary" value="Cours 3"><br> <br>
-                     <input type="button" class="btn btn-primary" value="Cours 4"><br> <br>
-                     <input type="button" class="btn btn-primary" value="Cours 4">
-
-                 </form>
-             </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4">
+                <span>Calculatrice</span>
+                 de cote
+            </h1>
+            <p class="lead">Cet outil permet de calculer les notes nécessaires pour atteindre une cote</p>
         </div>
     </div>
+    <div class = "container form-container bottom-margin">
+        <ul class="nav nav-tabs justify-content-center nav-fill" id="cours" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="cours1-tab" data-bs-toggle="tab" href="#cours1" role="tab" aria-controls="cours1" aria-selected = "true">Cours 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="cours2-tab" data-bs-toggle="tab" href="#cours2" role="tab" aria-controls="cours2" aria-selected = "false">Cours 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="cours3-tab" data-bs-toggle="tab"  href="#cours3" role="tab" aria-controls="cours3" aria-selected = "false">Cours 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="cours4-tab" data-bs-toggle="tab" href="#cours4" role="tab" aria-controls="cours4" aria-selected = "false">Cours 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="cours5-tab" data-bs-toggle="tab" href="#cours5" role="tab" aria-controls="cours5" aria-selected = "true"> Cours 5</a></a>
+            </li>
+        </ul>
+        <div class="tab-content" id="coursContent">
+            <div class="tab-pane fade show active" id="cours1" role="tabpanel" aria-labelledby="cours1-tab">
+                <div class="form-row">
+                    <div class="col-sm-12 col-md-3 form-group">
+                        <label for A+ cours 1> A+</label>
+                        <input class = 'form-control' type="number" id="level" name="level" min="0" max="100" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="cours2" role="tabpanel" aria-labelledby="cours2-tab">cours 2
+            </div>
+            <div class="tab-pane fade" id="cours3" role="tabpanel" aria-labelledby="cours3-tab">cours 3</div>
+            <div class="tab-pane fade" id="cours4" role="tabpanel" aria-labelledby="cours4-tab">cours 4</div>
+            <div class="tab-pane fade" id="cours5" role="tabpanel" aria-labelledby="cours5-tab">cours 5</div>
+        </div>
 
-    <script> src="custom.js" </script>
+        <!--<div class = "row-xxl-3">
+            <div class="col-md-12">
+                <form action = "#" name="calculator" class="main">
+                    <input type = "text" class="display form-control" name="display" id="display"><br>
+                    <input type="button" class="btn btn-primary" value="clear" id="clear"><br> <br>
+                    <input type="button" class="btn btn-primary" value="backspace2" onclick="backSpace()"><br> <br>
+                    <input type="button" class="btn btn-primary" value="Cours 3" ><br> <br>
+                    <input type="button" class="btn btn-primary" value="Cours 4"><br> <br>
+                </form>
+            </div>
+        </div>-->
+
+    </div>
+
+    <script src="custom.js"> </script>
+    <script src="js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
