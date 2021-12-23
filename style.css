@@ -3,7 +3,14 @@
     padding: 0;
 
 }
-
+.form-row{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+h5{
+    color:#FC766AFF;
+    font-weight: 700;
+}
 body {
     font-weight: 700;
     ;
@@ -33,8 +40,13 @@ body {
 .form-row{
     display: flex;
 }
-
-
+.row{
+    display: flex;
+    text-align: center;
+}
+.form-check-inline{
+    margin-top: 1rem;
+}
 .bottom-margin{
     margin-bottom: 1rem;
 }
@@ -49,11 +61,19 @@ body {
     margin:auto;
 
 }
-.col{
-    margin:auto;
-    background-color: blueviolet;
+.tbody, td, tfoot, th, thead, tr {
+    border-style: hidden;
+}
+.col-text-center{
+
+
+    margin-top: 1rem;
+}
+fieldset{
+    text-align: center;
 }
 .btn{
+
     height: auto;
     width: auto;
 

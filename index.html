@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html class='hydrated' lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -42,12 +42,243 @@
             <div class="tab-pane fade show active" id="cours1" role="tabpanel" aria-labelledby="cours1-tab">
                 <div class="form-row">
                     <div class="col-sm-12 col-md-3 form-group">
-                        <label for A+ cours 1> A+</label>
+
                         <input class = 'form-control' type="number" id="level" name="level" min="0" max="100" value="">
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="cours2" role="tabpanel" aria-labelledby="cours2-tab">cours 2
+            <div class="tab-pane fade" id="cours2" role="tabpanel" aria-labelledby="cours2-tab">
+                <div class="form-row">
+                    <div class="col-sm-12 col-md-6 form-group">
+                        <fieldset>
+                            <legend>
+                                <div class="col-md-12 d-flex justify-content-center title-color">
+                                    <h5>Cours</h5>
+                                </div>
+                            </legend>
+                            <table class="table text-center table-borderless" id="information_cours">
+                                <tbody>
+                                    <tr>
+                                        <th>Titre</th>
+                                        <th>Ponderation</th>
+                                        <th>Note</th>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Examen Intra</td>
+                                        <td>
+                                            <input type="number" id="ponderation1" class="form-control-sm" name="ponderation1" min="0" max="100" value="">
+                                        </td>
+                                        <td>
+                                            <input type="number" id="note1" class="form-control-sm" name="note1" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Examen Final</td>
+                                        <td>
+                                            <input type="number" id="ponderation2" class="form-control-sm" name="ponderation2" min="0" max="100" value="">
+                                        </td>
+                                        <td>
+                                            <input type="number" id="note2" class="form-control-sm" name="note2" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Travail Pratique 1</td>
+                                        <td>
+                                            <input type="number" id="ponderation3" class="form-control-sm" name="ponderation3" min="0" max="100" value="">
+                                        </td>
+                                        <td>
+                                            <input type="number" id="note3" class="form-control-sm" name="note3" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Travail Pratique 2</td>
+                                        <td>
+                                            <input type="number" id="ponderation4" class="form-control-sm" name="ponderation4" min="0" max="100" value="">
+                                        </td>
+                                        <td>
+                                            <input type="number" id="note4" class="form-control-sm" name="note4" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Travail Pratique 3</td>
+                                        <td>
+                                            <input type="number" id="ponderation5" class="form-control-sm" name="ponderation5" min="0" max="100" value="">
+                                        </td>
+                                        <td>
+                                            <input type="number" id="note5" class="form-control-sm" name="note5" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Travail Pratique 4</td>
+                                        <td>
+                                            <input type="number" id="ponderation6" class="form-control-sm" name="ponderation6" min="0" max="100" value="">
+                                        </td>
+                                        <td>
+                                            <input type="number" id="note6" class="form-control-sm" name="note6" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evaluation du cours</td>
+                                        <td>
+                                            <input type="number" id="ponderation7" class="form-control-sm" name="ponderation7" min="0" max="100" value="">
+                                        </td>
+                                        <td>
+                                            <input type="number" id="note7" class="form-control-sm" name="note7" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row-fluid">
+                                <button type="submit" class="btn btn-primary" onclick="calcul()">Soumettre</button>
+
+                            </div>
+                            <div class="col-text-center" id="resultat"></div>
+
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="AplusCheck" value="option1" >
+                                <label class="form-check-label">A+</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ACheck" value="option2">
+                                <label class="form-check-label">A</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="AmoinsCheck" value="option3">
+                                <label class="form-check-label">A-</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="BplusCheck" value="option3">
+                                <label class="form-check-label">B+-</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="BCheck" value="option3">
+                                <label class="form-check-label">B</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="BmoinsCheck" value="option3">
+                                <label class="form-check-label">B-</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CplusCheck" value="option3">
+                                <label class="form-check-label">C+</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CCheck" value="option3">
+                                <label class="form-check-label">C</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CmoinsCheck" value="option3">
+                                <label class="form-check-label">C-</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="DplusCheck" value="option3">
+                                <label class="form-check-label">D+</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="DCheck" value="option3">
+                                <label class="form-check-label">D</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ECheck" value="option3">
+                                <label class="form-check-label">E</label>
+                            </div>
+                        </fieldset>
+
+                    </div>
+                    <div class="col-sm-12 col-md-6 form-group">
+                        <fieldset>
+                            <legend>
+                                <div class="col-md-12 d-flex justify-content-center title-color">
+                                    <h5>Echelle de cote</h5>
+                                </div>
+                            </legend>
+                            <table class="table text-center table-bordereless" id="echelle">
+                                <tbody>
+                                    <tr>
+                                       <th>Cote</th>
+                                        <th>Minimum %</th>
+
+                                    </tr>
+                                    <tr>
+                                        <td>A+</td>
+                                        <td>
+                                            <input type="number" id="Aplus_min" class="form-control-sm" name="Aplus_min" min="0" max="100" value="">
+
+                                    </tr>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>
+                                            <input type="number" id="A_min" class="form-control-sm" name="A_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A-</td>
+                                        <td>
+                                            <input type="number" id="Amoins_min" class="form-control-sm" name="Amoins_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>B+</td>
+                                        <td>
+                                            <input type="number" id="Bplus_min" class="form-control-sm" name="Bplus_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>B</td>
+                                        <td>
+                                            <input type="number" id="B_min" class="form-control-sm" name="B_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>B-</td>
+                                        <td>
+                                            <input type="number" id="Bmoins_min" class="form-control-sm" name="Bmoins_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>C+</td>
+                                        <td>
+                                            <input type="number" id="Cplus_min" class="form-control-sm" name="Cplus_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>C</td>
+                                        <td>
+                                            <input type="number" id="C_min" class="form-control-sm" name="C_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>C-</td>
+                                        <td>
+                                            <input type="number" id="Cmoins_min" class="form-control-sm" name="Cmoins_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>D+</td>
+                                        <td>
+                                            <input type="number" id="Dplus_min" class="form-control-sm" name="Dplus_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>D</td>
+                                        <td>
+                                            <input type="number" id="D_min" class="form-control-sm" name="D_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>E</td>
+                                        <td>
+                                            <input type="number" id="E_min" class="form-control-sm" name="E_min" min="0" max="100" value="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-primary" onclick="enregistreEchelle()">Soumettre</button>
+                        </fieldset>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="cours3" role="tabpanel" aria-labelledby="cours3-tab">cours 3</div>
             <div class="tab-pane fade" id="cours4" role="tabpanel" aria-labelledby="cours4-tab">cours 4</div>
