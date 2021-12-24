@@ -35,19 +35,11 @@
                 <a class="nav-link" id="cours4-tab" data-bs-toggle="tab" href="#cours4" role="tab" aria-controls="cours4" aria-selected = "false">Cours 4</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="cours5-tab" data-bs-toggle="tab" href="#cours5" role="tab" aria-controls="cours5" aria-selected = "true"> Cours 5</a></a>
+                <a class="nav-link" id="cours5-tab" data-bs-toggle="tab" href="#cours5" role="tab" aria-controls="cours5" aria-selected = "false"> Cours 5</a></a>
             </li>
         </ul>
         <div class="tab-content" id="coursContent">
             <div class="tab-pane fade show active" id="cours1" role="tabpanel" aria-labelledby="cours1-tab">
-                <div class="form-row">
-                    <div class="col-sm-12 col-md-3 form-group">
-
-                        <input class = 'form-control' type="number" id="level" name="level" min="0" max="100" value="">
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="cours2" role="tabpanel" aria-labelledby="cours2-tab">
                 <div class="form-row">
                     <div class="col-sm-12 col-md-6 form-group">
                         <fieldset>
@@ -58,80 +50,79 @@
                             </legend>
                             <table class="table text-center table-borderless" id="information_cours">
                                 <tbody>
-                                    <tr>
-                                        <th>Titre</th>
-                                        <th>Ponderation</th>
-                                        <th>Note</th>
+                                <tr>
+                                    <th>Titre</th>
+                                    <th>Ponderation</th>
+                                    <th>Note</th>
 
-                                    </tr>
-                                    <tr>
-                                        <td>Examen Intra</td>
-                                        <td>
-                                            <input type="number" id="ponderation1" class="form-control-sm" name="ponderation1" min="0" max="100" value="">
-                                        </td>
-                                        <td>
-                                            <input type="number" id="note1" class="form-control-sm" name="note1" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Examen Final</td>
-                                        <td>
-                                            <input type="number" id="ponderation2" class="form-control-sm" name="ponderation2" min="0" max="100" value="">
-                                        </td>
-                                        <td>
-                                            <input type="number" id="note2" class="form-control-sm" name="note2" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Travail Pratique 1</td>
-                                        <td>
-                                            <input type="number" id="ponderation3" class="form-control-sm" name="ponderation3" min="0" max="100" value="">
-                                        </td>
-                                        <td>
-                                            <input type="number" id="note3" class="form-control-sm" name="note3" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Travail Pratique 2</td>
-                                        <td>
-                                            <input type="number" id="ponderation4" class="form-control-sm" name="ponderation4" min="0" max="100" value="">
-                                        </td>
-                                        <td>
-                                            <input type="number" id="note4" class="form-control-sm" name="note4" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Travail Pratique 3</td>
-                                        <td>
-                                            <input type="number" id="ponderation5" class="form-control-sm" name="ponderation5" min="0" max="100" value="">
-                                        </td>
-                                        <td>
-                                            <input type="number" id="note5" class="form-control-sm" name="note5" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Travail Pratique 4</td>
-                                        <td>
-                                            <input type="number" id="ponderation6" class="form-control-sm" name="ponderation6" min="0" max="100" value="">
-                                        </td>
-                                        <td>
-                                            <input type="number" id="note6" class="form-control-sm" name="note6" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Evaluation du cours</td>
-                                        <td>
-                                            <input type="number" id="ponderation7" class="form-control-sm" name="ponderation7" min="0" max="100" value="">
-                                        </td>
-                                        <td>
-                                            <input type="number" id="note7" class="form-control-sm" name="note7" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
+                                </tr>
+                                <tr>
+                                    <td>Examen Intra</td>
+                                    <td>
+                                        <input type="number" id="ponderation1" class="form-control-sm" name="ponderation1" min="0" max="100" value="">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="note1" class="form-control-sm" name="note1" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Examen Final</td>
+                                    <td>
+                                        <input type="number" id="ponderation2" class="form-control-sm" name="ponderation2" min="0" max="100" value="">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="note2" class="form-control-sm" name="note2" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Travail Pratique 1</td>
+                                    <td>
+                                        <input type="number" id="ponderation3" class="form-control-sm" name="ponderation3" min="0" max="100" value="">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="note3" class="form-control-sm" name="note3" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Travail Pratique 2</td>
+                                    <td>
+                                        <input type="number" id="ponderation4" class="form-control-sm" name="ponderation4" min="0" max="100" value="">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="note4" class="form-control-sm" name="note4" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Travail Pratique 3</td>
+                                    <td>
+                                        <input type="number" id="ponderation5" class="form-control-sm" name="ponderation5" min="0" max="100" value="">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="note5" class="form-control-sm" name="note5" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Travail Pratique 4</td>
+                                    <td>
+                                        <input type="number" id="ponderation6" class="form-control-sm" name="ponderation6" min="0" max="100" value="">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="note6" class="form-control-sm" name="note6" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Evaluation du cours</td>
+                                    <td>
+                                        <input type="number" id="ponderation7" class="form-control-sm" name="ponderation7" min="0" max="100" value="">
+                                    </td>
+                                    <td>
+                                        <input type="number" id="note7" class="form-control-sm" name="note7" min="0" max="100" value="">
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
                             <div class="row-fluid">
-                                <button type="submit" class="btn btn-primary" onclick="calcul()">Soumettre</button>
-
+                                <button type="submit" class="btn btn-primary" onclick="calcul()">Calculer</button>
                             </div>
                             <div class="col-text-center" id="resultat"></div>
 
@@ -150,7 +141,7 @@
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="BplusCheck" value="option3">
-                                <label class="form-check-label">B+-</label>
+                                <label class="form-check-label">B+</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="BCheck" value="option3">
@@ -191,98 +182,100 @@
                         <fieldset>
                             <legend>
                                 <div class="col-md-12 d-flex justify-content-center title-color">
-                                    <h5>Echelle de cote</h5>
+                                    <h5>Échelle de cote</h5>
                                 </div>
                             </legend>
                             <table class="table text-center table-bordereless" id="echelle">
                                 <tbody>
-                                    <tr>
-                                       <th>Cote</th>
-                                        <th>Minimum %</th>
+                                <tr>
+                                    <th>Cote</th>
+                                    <th>Minimum %</th>
 
-                                    </tr>
-                                    <tr>
-                                        <td>A+</td>
-                                        <td>
-                                            <input type="number" id="Aplus_min" class="form-control-sm" name="Aplus_min" min="0" max="100" value="">
+                                </tr>
+                                <tr>
+                                    <td>A+</td>
+                                    <td>
+                                        <input type="number" id="Aplus_min" class="form-control-sm" name="Aplus_min" min="0" max="100" value="">
 
-                                    </tr>
-                                    <tr>
-                                        <td>A</td>
-                                        <td>
-                                            <input type="number" id="A_min" class="form-control-sm" name="A_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>A-</td>
-                                        <td>
-                                            <input type="number" id="Amoins_min" class="form-control-sm" name="Amoins_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>B+</td>
-                                        <td>
-                                            <input type="number" id="Bplus_min" class="form-control-sm" name="Bplus_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>B</td>
-                                        <td>
-                                            <input type="number" id="B_min" class="form-control-sm" name="B_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>B-</td>
-                                        <td>
-                                            <input type="number" id="Bmoins_min" class="form-control-sm" name="Bmoins_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>C+</td>
-                                        <td>
-                                            <input type="number" id="Cplus_min" class="form-control-sm" name="Cplus_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>C</td>
-                                        <td>
-                                            <input type="number" id="C_min" class="form-control-sm" name="C_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>C-</td>
-                                        <td>
-                                            <input type="number" id="Cmoins_min" class="form-control-sm" name="Cmoins_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>D+</td>
-                                        <td>
-                                            <input type="number" id="Dplus_min" class="form-control-sm" name="Dplus_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>D</td>
-                                        <td>
-                                            <input type="number" id="D_min" class="form-control-sm" name="D_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>E</td>
-                                        <td>
-                                            <input type="number" id="E_min" class="form-control-sm" name="E_min" min="0" max="100" value="">
-                                        </td>
-                                    </tr>
+                                </tr>
+                                <tr>
+                                    <td>A</td>
+                                    <td>
+                                        <input type="number" id="A_min" class="form-control-sm" name="A_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>A-</td>
+                                    <td>
+                                        <input type="number" id="Amoins_min" class="form-control-sm" name="Amoins_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B+</td>
+                                    <td>
+                                        <input type="number" id="Bplus_min" class="form-control-sm" name="Bplus_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>
+                                        <input type="number" id="B_min" class="form-control-sm" name="B_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B-</td>
+                                    <td>
+                                        <input type="number" id="Bmoins_min" class="form-control-sm" name="Bmoins_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>C+</td>
+                                    <td>
+                                        <input type="number" id="Cplus_min" class="form-control-sm" name="Cplus_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td>
+                                        <input type="number" id="C_min" class="form-control-sm" name="C_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>C-</td>
+                                    <td>
+                                        <input type="number" id="Cmoins_min" class="form-control-sm" name="Cmoins_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>D+</td>
+                                    <td>
+                                        <input type="number" id="Dplus_min" class="form-control-sm" name="Dplus_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>D</td>
+                                    <td>
+                                        <input type="number" id="D_min" class="form-control-sm" name="D_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>E</td>
+                                    <td>
+                                        <input type="number" id="E_min" class="form-control-sm" name="E_min" min="0" max="100" value="">
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
-                            <button class="btn btn-primary" onclick="enregistreEchelle()">Soumettre</button>
                         </fieldset>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="cours3" role="tabpanel" aria-labelledby="cours3-tab">cours 3</div>
-            <div class="tab-pane fade" id="cours4" role="tabpanel" aria-labelledby="cours4-tab">cours 4</div>
-            <div class="tab-pane fade" id="cours5" role="tabpanel" aria-labelledby="cours5-tab">cours 5</div>
+            <div class="tab-pane fade " id="cours2" role="tabpanel" aria-labelledby="cours2-tab">
+
+            </div>
+            <div class="tab-pane fade" id="cours3" role="tabpanel" aria-labelledby="cours3-tab"></div>
+            <div class="tab-pane fade" id="cours4" role="tabpanel" aria-labelledby="cours4-tab"></div>
+            <div class="tab-pane fade" id="cours5" role="tabpanel" aria-labelledby="cours5-tab"></div>
         </div>
 
         <!--<div class = "row-xxl-3">
@@ -298,7 +291,7 @@
         </div>-->
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="custom.js"> </script>
     <script src="js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

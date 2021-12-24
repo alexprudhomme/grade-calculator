@@ -64,6 +64,14 @@ body {
 .tbody, td, tfoot, th, thead, tr {
     border-style: hidden;
 }
+
+.nav-link{
+    color:#074db3;
+}
+
+.nav-link.active{
+    color:#FC766AFF !important;
+}
 .col-text-center{
 
 
