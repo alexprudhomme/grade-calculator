@@ -42,10 +42,13 @@ function changeMoyenne(x) {
 
 //fonction de calcul
 function calcul() {
+    debugger;
     let moyenne = changeMoyenne(0);
     //changeMoyenne(moyenne)
     let ponderation_a_diviser = [];
     let resultat_a_soustraire = [];
+    let total_resultat = 0;
+    let total_ponderation = 0;
 
     // resultat1
     if(document.getElementById('ponderation1').value !== '') {
@@ -54,6 +57,7 @@ function calcul() {
             ponderation_a_diviser.push(ponderation1)
         } else {
             resultat_a_soustraire.push(ponderation1 * document.getElementById('note1').value)
+            total_ponderation = total_ponderation + ponderation1;
         }
     }
     // resultat2
@@ -63,6 +67,7 @@ function calcul() {
             ponderation_a_diviser.push(ponderation2)
         } else {
             resultat_a_soustraire.push(ponderation2 * document.getElementById('note2').value)
+            total_ponderation = total_ponderation + ponderation2
         }
     }
     // resultat3
@@ -72,6 +77,7 @@ function calcul() {
             ponderation_a_diviser.push(ponderation3)
         } else {
             resultat_a_soustraire.push(ponderation3 * document.getElementById('note3').value)
+            total_ponderation = total_ponderation + ponderation3
         }
     }
     // resultat4
@@ -81,6 +87,7 @@ function calcul() {
             ponderation_a_diviser.push(ponderation4)
         } else {
             resultat_a_soustraire.push(ponderation4 * document.getElementById('note4').value)
+            total_ponderation = total_ponderation + ponderation4
         }
     }
     // resultat5
@@ -90,6 +97,7 @@ function calcul() {
             ponderation_a_diviser.push(ponderation5)
         } else {
             resultat_a_soustraire.push(ponderation5 * document.getElementById('note5').value)
+            total_ponderation = total_ponderation + ponderation5
         }
     }
     // resultat6
@@ -99,6 +107,7 @@ function calcul() {
             ponderation_a_diviser.push(ponderation6)
         } else {
             resultat_a_soustraire.push(ponderation6 * document.getElementById('note6').value)
+            total_ponderation = total_ponderation + ponderation6
         }
     }
     // resultat7
@@ -108,12 +117,14 @@ function calcul() {
             ponderation_a_diviser.push(ponderation7)
         } else {
             resultat_a_soustraire.push(ponderation7 * document.getElementById('note7').value)
+            total_ponderation = total_ponderation + ponderation7
         }
     }
 
     //const prequis = (moyenne - (ponderation1 * note1))/(ponderation2 + ponderation3)
     for (const resultat of resultat_a_soustraire){
         moyenne = moyenne - resultat;
+        total_resultat = total_resultat + resultat;
     }
     let somme_ponderation = 0
     for (const ponderation of ponderation_a_diviser) {
@@ -122,9 +133,11 @@ function calcul() {
     if (somme_ponderation === 0) {
         document.getElementById('resultat').innerHTML = 'Erreur'
     }else{
-        const prequis = (Math.round((moyenne/somme_ponderation) * 100)/100).toFixed(2);
-
-        document.getElementById('resultat').innerHTML = 'Vous avez besoin de ' + prequis.toString() +'%'
+        const prequis = (Math.round((moyenne/somme_ponderation) * 100)/100).toFixed(2).toString();
+        const resultat_present =(Math.round((total_resultat/total_ponderation) * 100)/100).toFixed(2).toString();
+        document.getElementById('moyenne').innerHTML = resultat_present
+        document.getElementById('prequis').innerHTML = prequis
+        //document.getElementById('resultat').innerHTML = 'Votre moyenne est présentement de ' + '<span> resultat_present </span>' + '%. Vous avez alors besoin de ' + '<span>prequis.toString()</span>' +'% pour atteindre la cote.'
     }
      //////////
     console.log('s')
@@ -492,5 +505,8 @@ document.querySelectorAll("a").forEach(function (i){
 
     })
 })
+// TODO: ajouter moyenne
 // TODO: ajouter rename les titres
+// TODO: localStorage
 // TODO: ajouter un lien en haut a mon github
+// TODO:
