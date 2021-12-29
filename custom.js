@@ -505,8 +505,5 @@ document.querySelectorAll("a").forEach(function (i){
 
     })
 })
-// TODO: ajouter moyenne
 // TODO: ajouter rename les titres
-// TODO: localStorage
 // TODO: ajouter un lien en haut a mon github
-// TODO:
