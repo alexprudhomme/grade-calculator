@@ -506,4 +506,3 @@ document.querySelectorAll("a").forEach(function (i){
     })
 })
 // TODO: ajouter rename les titres
-// TODO: ajouter un lien en haut a mon github
